@@ -1,6 +1,8 @@
 ---
 title: "IMGS2022 Twitter"
-output: html_notebook
+output:
+  github_document: default
+  html_notebook: default
 ---
 
 A look at twitter use at the 2022 IMGS conference.
