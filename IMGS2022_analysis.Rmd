@@ -1,0 +1,20 @@
+---
+title: "IMGS2022 Twitter"
+output: html_notebook
+---
+
+A look at twitter use at the 2022 IMGS conference.
+
+```{r include=FALSE}
+library(tidyverse)
+library(academictwitteR)
+
+df <- bind_tweets("../../research/testing/", output_format = "tidy")
+# remove dupes
+df <- df %>% distinct(tweet_id, .keep_all = T)
+
+range(df$created_at)
+# mark retweets vs. not
+df <- df %>% mutate(is_retweet = ifelse(grepl("RT", text),  1, 0))
+```
+
