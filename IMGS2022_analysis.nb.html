@@ -1774,6 +1774,11 @@ pre code {
 <p>The top 11 users (since imgs2022 is in there too)</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyB1c2VycyBhbmQgbnVtYmVyIG9mIHR3ZWV0c1xuZGZfdXNlcnMgPC0gZGYgJT4lIGNvdW50KHVzZXJfdXNlcm5hbWUpICU+JSBhcnJhbmdlKGRlc2MobikpXG5kZl91c2VycyAlPiUgc2xpY2UoMToxMSkgJT4lIHJlbmFtZShgVHdpdHRlciBVc2VybmFtZWAgPSB1c2VyX3VzZXJuYW1lLCBgTnVtYmVyIG9mIHR3ZWV0c2AgPSBuKSAlPiUga25pdHI6OmthYmxlKClcbmBgYCJ9 -->
+<pre class="r"><code># users and number of tweets
+df_users &lt;- df %&gt;% count(user_username) %&gt;% arrange(desc(n))
+df_users %&gt;% slice(1:11) %&gt;% rename(`Twitter Username` = user_username, `Number of tweets` = n) %&gt;% knitr::kable()</code></pre>
+<!-- rnb-source-end -->
 
 <!-- rnb-html-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImtuaXRfYXNpcyJdLCJzaXppbmdQb2xpY3kiOltdfX0= -->
 
