@@ -16,5 +16,15 @@ df <- df %>% distinct(tweet_id, .keep_all = T)
 range(df$created_at)
 # mark retweets vs. not
 df <- df %>% mutate(is_retweet = ifelse(grepl("RT", text),  1, 0))
+
 ```
+
+The top 11 users (since imgs2022 is in there too)
+
+```{r}
+# users and number of tweets
+df_users <- df %>% count(user_username) %>% arrange(desc(n))
+df_users %>% slice(1:11) %>% rename(`Twitter Username` = user_username, `Number of tweets` = n) %>% knitr::kable()
+```
+
 
