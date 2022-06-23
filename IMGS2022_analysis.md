@@ -7,17 +7,17 @@ The top 11 users (since imgs2022 is in there too)
 
 | Twitter Username | Number of tweets |
 |:-----------------|-----------------:|
-| imgs2022         |              176 |
-| steph_coen       |               58 |
-| ampaimelody      |               30 |
+| imgs2022         |              178 |
+| steph_coen       |               59 |
+| ampaimelody      |               31 |
 | RoyalChukz       |               28 |
-| DrGrantAitken    |               20 |
-| hobbs_PA         |               20 |
-| jamie0pearce     |               19 |
-| JoreintjeM       |               19 |
-| gicycle\_        |               17 |
+| DrGrantAitken    |               21 |
+| hobbs_PA         |               21 |
+| jamie0pearce     |               21 |
+| JoreintjeM       |               20 |
+| gicycle\_        |               18 |
 | johale13         |               14 |
-| MichaelJWidener  |               13 |
+| MichaelJWidener  |               14 |
 
 Tweets per day of the conference and by hour of the day
 
