@@ -65,6 +65,7 @@ lks <- df %>%
   rename(`Twitter handle` = user_username, `User name` = user_name, `Tweet text` = text, `# of likes` = like_count) %>% 
   knitr::kable()
 lks <- gsub("\n\n", "", lks) # since a double line break is messing up the table
+lks <- gsub("\n", "", lks) # since a double line break is messing up the table
 lks
 ```
 
